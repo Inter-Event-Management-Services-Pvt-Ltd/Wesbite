@@ -9,7 +9,7 @@ export function SiteFooter() {
         {/* top: wordmark + one-line positioning */}
         <div className="mb-14 flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <div>
-            <span className="mb-5 inline-flex items-center border border-line bg-white px-2 py-1.5">
+            <span className="mb-5 inline-flex items-center rounded-md border border-line bg-white px-2 py-1.5">
               <Image src="/brand/iems-logo.jpg" alt="IEMS — Nagpal's" width={72} height={44} />
             </span>
             <p className="display text-[clamp(3.5rem,10vw,7rem)] leading-none text-ink">IEMS</p>

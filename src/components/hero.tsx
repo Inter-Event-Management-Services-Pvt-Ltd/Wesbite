@@ -77,7 +77,7 @@ function TrussDrawing() {
       >
         {/* curve apex (t=0.5) sits at y≈249, not the control point */}
         <line x1="620" y1="240" x2="620" y2="250" stroke="var(--line-strong)" strokeWidth="1" />
-        <rect x="556" y="182" width="128" height="58" fill="white" stroke="var(--line-strong)" strokeWidth="1" />
+        <rect x="556" y="182" width="128" height="58" rx="8" fill="white" stroke="var(--line-strong)" strokeWidth="1" />
         <image href="/brand/iems-logo.jpg" x="566" y="188" width="108" height="46" preserveAspectRatio="xMidYMid meet" />
       </motion.g>
 

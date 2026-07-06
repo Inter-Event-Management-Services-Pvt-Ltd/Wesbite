@@ -35,7 +35,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           {/* logo artwork has a white ground — the chip makes that deliberate on both themes */}
-          <span className="flex items-center border border-line bg-white px-1.5 py-1">
+          <span className="flex items-center rounded-md border border-line bg-white px-1.5 py-1">
             <Image
               src="/brand/iems-logo.jpg"
               alt="IEMS — Nagpal's"
