@@ -22,11 +22,11 @@ const mono = Spline_Sans_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "IEMS — Event Infrastructure Since 1986 | New Delhi · Jaipur · Chandigarh",
+    default: "IEMS — Event Infrastructure Since 2002 | New Delhi · Jaipur · Chandigarh",
     template: "%s | IEMS",
   },
   description:
-    "Inter Event Management Services — full-service event management since 1986. Conferences, exhibitions, launches, weddings and VVIP ceremonies, planned and produced in-house, with our own hangars, halls and infrastructure.",
+    "Inter Event Management Services — full-service event management since 2002. Conferences, exhibitions, launches, weddings and VVIP ceremonies, planned and produced in-house, with our own hangars, halls and infrastructure.",
 };
 
 export default function RootLayout({

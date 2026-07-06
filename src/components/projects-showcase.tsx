@@ -71,7 +71,7 @@ export function ProjectsShowcase() {
               href="/portfolio"
               className="link-draw inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.18em] text-soft hover:text-ink"
             >
-              Browse the full portfolio — four decades of builds <span aria-hidden>→</span>
+              Browse the full portfolio — two decades of builds <span aria-hidden>→</span>
             </Link>
           </div>
         </Reveal>

@@ -63,7 +63,7 @@ export function SiteFooter() {
               <li><Link href="/portfolio" className="link-draw hover:text-ink">Portfolio</Link></li>
               <li><Link href="/team" className="link-draw hover:text-ink">Meet the Team</Link></li>
               <li><Link href="/careers" className="link-draw hover:text-ink">Careers</Link></li>
-              <li><Link href="/#legacy" className="link-draw hover:text-ink">Since 1986</Link></li>
+              <li><Link href="/#legacy" className="link-draw hover:text-ink">Since 2002</Link></li>
               <li><Link href="/#contact" className="link-draw hover:text-ink">Start an Enquiry</Link></li>
               <li>
                 <a href={`mailto:${site.email}`} className="link-draw break-all hover:text-ink">

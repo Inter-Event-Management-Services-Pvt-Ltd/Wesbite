@@ -7,7 +7,7 @@ type CounterProps = {
   value: number;
   prefix?: string;
   suffix?: string;
-  /** Years like 1986 read wrong with digit grouping. */
+  /** Years like 2002 read wrong with digit grouping. */
   grouped?: boolean;
   duration?: number;
 };

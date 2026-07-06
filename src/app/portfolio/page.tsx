@@ -6,7 +6,7 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "Portfolio — The Record",
   description:
-    "Four decades of congresses, convocations, exhibitions and structures built by IEMS across North India.",
+    "Two decades of congresses, convocations, exhibitions and structures built by IEMS across North India.",
 };
 
 export default function PortfolioPage() {
@@ -22,13 +22,13 @@ export default function PortfolioPage() {
           <Reveal>
             <p className="kicker mb-5 flex items-center gap-3">
               <span aria-hidden className="inline-block h-px w-10 bg-accent" />
-              The record — since 1986
+              The record — since 2002
             </p>
             <h1 className="display text-[clamp(3rem,9vw,7.5rem)]">Portfolio</h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-soft md:text-lg">
               Congresses, convocations, exhibitions and standing structures.
               Three carry full case files; the rest are entries from a ledger
-              that runs four decades deep.
+              that runs two decades deep.
             </p>
           </Reveal>
         </div>

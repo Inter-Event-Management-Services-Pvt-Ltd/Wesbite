@@ -7,7 +7,7 @@ import { leadership, disciplines, missionVision } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Meet the Team",
   description:
-    "The family that founded IEMS in 1986 and the crews who build protocol-grade venues across North India.",
+    "The family that founded IEMS in 2002 and the crews who build protocol-grade venues across North India.",
 };
 
 export default function TeamPage() {
@@ -31,7 +31,7 @@ export default function TeamPage() {
             <p className="mt-6 max-w-xl text-base leading-relaxed text-soft md:text-lg">
               Every IEMS build is answered for from one address. This is the
               team at the main branch — the family that founded the firm in
-              1986 and the crews who have stayed for decades. On a
+              2002 and the crews who have stayed for decades. On a
               security-cleared site, continuity is the qualification.
             </p>
           </Reveal>

@@ -40,7 +40,7 @@ export function Intro() {
               <h2 className="display text-[clamp(2.2rem,4.6vw,3.9rem)] leading-[1.02] text-ink">
                 IEMS is a full-service event management house —{" "}
                 <span className="text-accent">the one-stop shop</span>
-                {" "}India&rsquo;s institutions have used since 1986.
+                {" "}India&rsquo;s institutions have used since 2002.
               </h2>
               <p className="mt-7 max-w-xl text-base leading-relaxed text-soft md:text-lg">
                 We conceptualise, plan, produce and run events — then build the

@@ -2,7 +2,7 @@ import { SectionHeading } from "./section-heading";
 import { Reveal } from "./reveal";
 import { timeline } from "@/lib/data";
 
-/** "Since 1986" — the credibility the old site buried, given a whole act. */
+/** "Since 2002" — the credibility the old site buried, given a whole act. */
 export function Legacy() {
   return (
     <section id="legacy" className="scroll-mt-20 border-t border-line">
@@ -10,8 +10,8 @@ export function Legacy() {
         <SectionHeading
           index="04"
           kicker="The legacy"
-          title="Working since 1986"
-          lede="Founded before India liberalised, still run by the family that founded it. The record below is the sales pitch — there isn't another one."
+          title="Working since 2002"
+          lede="Founded in New Delhi, still run by the family that founded it. The record below is the sales pitch — there isn't another one."
         />
 
         <div className="grid gap-14 lg:grid-cols-5 lg:gap-20">
@@ -24,7 +24,7 @@ export function Legacy() {
                   style={{ WebkitTextStroke: "1.5px var(--line-strong)" }}
                   aria-hidden
                 >
-                  1986
+                  2002
                 </p>
                 <blockquote className="mt-8 max-w-sm border-l-2 border-accent pl-5">
                   <p className="text-lg leading-relaxed text-ink">

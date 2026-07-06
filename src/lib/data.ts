@@ -255,29 +255,29 @@ export const projects: Project[] = [
 
 export const timeline = [
   {
-    year: "1986",
+    year: "2002",
     title: "Founded in New Delhi",
     text: "IEMS begins as an event services house in the capital, building for institutions rather than parties.",
   },
   {
-    year: "1990s",
+    year: "2000s",
     title: "Infrastructure, in-house",
     text: "The company buys rather than rents: hangars, AC plant, flooring, stall systems. The inventory becomes the moat. ", // [PLACEHOLDER] decade detail
   },
   {
-    year: "2000s",
-    title: "The VVIP decade",
+    year: "2010s",
+    title: "The VVIP years",
     text: "World congresses, AIIMS convocations and state ceremonies put IEMS crews inside security-cleared, protocol-graded builds.", // [VERIFY]
   },
   {
-    year: "2010s",
+    year: "2015+",
     title: "Three-city footprint",
     text: "Jaipur and Chandigarh offices with their own warehousing bring the same standard to North India's convention circuit.",
   },
   {
     year: "Today",
     title: "Second generation, same standard",
-    text: "Four decades on, the client retention ratio — not the brochure — is the company's proudest number.", // [PLACEHOLDER]
+    text: "Two decades on, the client retention ratio — not the brochure — is the company's proudest number.", // [PLACEHOLDER]
   },
 ];
 
@@ -474,7 +474,7 @@ export const leadership = [
     name: "[PLACEHOLDER: Founder & MD name]",
     role: "Managing Director",
     initials: "MD",
-    bio: "Founded IEMS in 1986 and still walks every VVIP site before handover. Four decades of protocol-grade delivery under one pair of eyes.",
+    bio: "Founded IEMS in 2002 and still walks every VVIP site before handover. Two decades of protocol-grade delivery under one pair of eyes.",
     note: "Swap: MD portrait",
   },
   {

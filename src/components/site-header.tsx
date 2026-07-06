@@ -45,7 +45,7 @@ export function SiteHeader() {
             />
           </span>
           <span className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-faint sm:inline">
-            Est. 1986 · New Delhi
+            Est. 2002 · New Delhi
           </span>
         </Link>
 

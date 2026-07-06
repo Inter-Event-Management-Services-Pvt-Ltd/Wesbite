@@ -153,7 +153,7 @@ export function Hero() {
         </h1>
 
         <motion.p className="mt-8 max-w-xl text-base leading-relaxed text-soft md:text-lg" {...enter(0.5)}>
-          For four decades IEMS has planned, produced and built India&rsquo;s
+          For over two decades IEMS has planned, produced and built India&rsquo;s
           congresses, exhibitions, launches and ceremonies — from concept and
           guest list to the hangars and halls they happen in. {dignitaryLine}
         </motion.p>
@@ -193,7 +193,7 @@ export function Hero() {
                   value={s.value}
                   prefix={s.prefix ?? ""}
                   suffix={s.suffix ?? ""}
-                  grouped={s.value !== 1986}
+                  grouped={s.value !== 2002}
                 />
               </dd>
             </div>
