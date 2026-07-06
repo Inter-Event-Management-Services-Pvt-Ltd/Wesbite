@@ -81,13 +81,18 @@ function TrussDrawing() {
         <image href="/brand/iems-logo.jpg" x="566" y="188" width="108" height="46" preserveAspectRatio="xMidYMid meet" />
       </motion.g>
 
-      {/* services cycling either side of the arch */}
-      <motion.text {...cycle(`l-${leftService}`)} x="216" y="208" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
-        {leftService}
-      </motion.text>
-      <motion.text {...cycle(`r-${rightService}`)} x="1024" y="208" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
-        {rightService}
-      </motion.text>
+      {/* services riding the arch shoulders, rotated to the curve tangent at t≈0.2/0.8.
+          Rotation lives on a static <g> — motion.text animates transform and would clobber it. */}
+      <g transform="rotate(-25 268 296)">
+        <motion.text {...cycle(`l-${leftService}`)} x="268" y="296" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+          {leftService}
+        </motion.text>
+      </g>
+      <g transform="rotate(25 972 296)">
+        <motion.text {...cycle(`r-${rightService}`)} x="972" y="296" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+          {rightService}
+        </motion.text>
+      </g>
 
       {/* flagship builds under the arch */}
       <motion.text {...cycle(`b-${build}`)} x="620" y="392" textAnchor="middle" fill="var(--ink-faint)" style={annotationFont}>
