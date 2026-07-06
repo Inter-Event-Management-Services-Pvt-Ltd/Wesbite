@@ -81,18 +81,17 @@ function TrussDrawing() {
         <image href="/brand/iems-logo.jpg" x="566" y="188" width="108" height="46" preserveAspectRatio="xMidYMid meet" />
       </motion.g>
 
-      {/* services riding the arch shoulders, rotated to the curve tangent at t≈0.2/0.8.
-          Rotation lives on a static <g> — motion.text animates transform and would clobber it. */}
-      <g transform="rotate(-25 268 296)">
-        <motion.text {...cycle(`l-${leftService}`)} x="268" y="296" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
-          {leftService}
-        </motion.text>
-      </g>
-      <g transform="rotate(25 972 296)">
-        <motion.text {...cycle(`r-${rightService}`)} x="972" y="296" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
-          {rightService}
-        </motion.text>
-      </g>
+      {/* invisible rail just outside the outer chord — service text wraps along it,
+          each glyph rotating with the curve. Cycling stays on key-remount (proven). */}
+      <defs>
+        <path id="truss-text-arc" d="M 22 468 Q 620 -6 1218 468" />
+      </defs>
+      <motion.text {...cycle(`l-${leftService}`)} textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+        <textPath href="#truss-text-arc" startOffset="15%">{leftService}</textPath>
+      </motion.text>
+      <motion.text {...cycle(`r-${rightService}`)} textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+        <textPath href="#truss-text-arc" startOffset="85%">{rightService}</textPath>
+      </motion.text>
 
       {/* flagship builds under the arch */}
       <motion.text {...cycle(`b-${build}`)} x="620" y="392" textAnchor="middle" fill="var(--ink-faint)" style={annotationFont}>
