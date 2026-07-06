@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { Counter } from "./counter";
 import { Magnetic } from "./magnetic";
-import { heroSpecs, dignitaryLine } from "@/lib/data";
+import { heroSpecs, dignitaryLine, fullServiceScope, topEvents } from "@/lib/data";
 
 /* ---------- truss geometry: quadratic arch, evaluated per t ---------- */
 
@@ -24,9 +24,35 @@ const INNER: [Pt, Pt, Pt] = [{ x: 96, y: 478 }, { x: 620, y: 92 }, { x: 1144, y:
 
 const WEB_STEPS = Array.from({ length: 13 }, (_, i) => 0.085 + i * 0.069);
 
-/** Animated engineering elevation of a clear-span hangar. */
+/**
+ * Animated engineering elevation of a clear-span hangar, annotated like a
+ * title block: the logo above the apex, plain-words services cycling either
+ * side, and the flagship builds cycling under the arch. Hover to hold the
+ * current items. Same list as the intro's "what full-service means" panel.
+ */
 function TrussDrawing() {
   const reduce = useReducedMotion();
+  const [step, setStep] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (reduce || paused) return;
+    const t = setInterval(() => setStep((s) => s + 1), 3200);
+    return () => clearInterval(t);
+  }, [reduce, paused]);
+
+  const cycle = (key: string) => ({
+    key,
+    initial: reduce ? undefined : { opacity: 0, y: 6 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.5, ease: EASE },
+  });
+
+  const annotationFont = { font: "500 13px var(--font-mono)", letterSpacing: "0.18em", textTransform: "uppercase" as const };
+  const leftService = fullServiceScope[step % fullServiceScope.length];
+  const rightService = fullServiceScope[(step + 1) % fullServiceScope.length];
+  const build = topEvents[step % topEvents.length];
+
   const draw = (delay: number) => ({
     initial: reduce ? undefined : { pathLength: 0, opacity: 0 },
     animate: { pathLength: 1, opacity: 1 },
@@ -40,7 +66,33 @@ function TrussDrawing() {
       aria-hidden
       className="h-full w-full"
       preserveAspectRatio="xMidYMax meet"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
     >
+      {/* logo plate above the apex, tied to it with a stem */}
+      <motion.g
+        initial={reduce ? undefined : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 0.7 }}
+      >
+        {/* curve apex (t=0.5) sits at y≈249, not the control point */}
+        <line x1="620" y1="240" x2="620" y2="250" stroke="var(--line-strong)" strokeWidth="1" />
+        <rect x="556" y="182" width="128" height="58" fill="white" stroke="var(--line-strong)" strokeWidth="1" />
+        <image href="/brand/iems-logo.jpg" x="566" y="188" width="108" height="46" preserveAspectRatio="xMidYMid meet" />
+      </motion.g>
+
+      {/* services cycling either side of the arch */}
+      <motion.text {...cycle(`l-${leftService}`)} x="216" y="208" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+        {leftService}
+      </motion.text>
+      <motion.text {...cycle(`r-${rightService}`)} x="1024" y="208" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+        {rightService}
+      </motion.text>
+
+      {/* flagship builds under the arch */}
+      <motion.text {...cycle(`b-${build}`)} x="620" y="392" textAnchor="middle" fill="var(--ink-faint)" style={annotationFont}>
+        Built by this crew · {build}
+      </motion.text>
       {/* chords */}
       <motion.path
         d={`M ${OUTER[0].x} ${OUTER[0].y} Q ${OUTER[1].x} ${OUTER[1].y} ${OUTER[2].x} ${OUTER[2].y}`}

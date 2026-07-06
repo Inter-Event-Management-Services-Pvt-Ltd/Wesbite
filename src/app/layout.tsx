@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | IEMS",
   },
   description:
-    "Inter Event Management Services — full-service event management since 2002. Conferences, exhibitions, launches, weddings and VVIP ceremonies, planned and produced in-house, with our own hangars, halls and infrastructure.",
+    "Inter Event Management Services — full-service event management since 2002. Conferences, exhibitions, launches and VVIP ceremonies, planned and produced in-house, with our own hangars, halls and infrastructure.",
 };
 
 export default function RootLayout({

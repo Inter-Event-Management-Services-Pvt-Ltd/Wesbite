@@ -32,17 +32,35 @@ export const heroSpecs = [
 /*  Credibility band                                                   */
 /* ------------------------------------------------------------------ */
 
-// Events and institutions from the current site's record. [VERIFY] each
+// Institutions from iemsnewdelhi.com's public event record. [VERIFY] each
 // before launch — these are public claims.
-export const marqueeEvents = [
+export const clients = [
+  { name: "AIIMS, New Delhi", note: "Convocations" },
+  { name: "Association of Physicians of India", note: "APICON 2009" },
+  { name: "World Mining Congress", note: "19th Congress & Expo 2003" },
+  { name: "CII", note: "AGM & National Conference 2013" },
+  { name: "Delhi Ophthalmological Society", note: "DOSCON 2019 · The Ashok" },
+  { name: "All India Ophthalmological Society", note: "AIOC Conference" },
+  { name: "World Federation for Mental Health", note: "World Congress" },
+  { name: "Government of India", note: "State ceremonies & inaugurations" },
+];
+
+// The three builds we lead with — cycled inside the hero truss drawing.
+export const topEvents = [
+  "19th World Mining Congress & Expo",
   "AIIMS Convocations",
-  "19th World Mining Congress",
-  "APICON 2009",
-  "World Congress of Mental Health",
-  "DOSCON 2019 · The Ashok",
-  "AIOC Conference",
-  "National-level Foundation Ceremonies",
-  "Presidential Inaugurations",
+  "APICON 2009 — 61st Conference of API",
+];
+
+// What full-service means, in plain words. Shown beside the intro and
+// orbiting the truss drawing in the hero — one list, two places.
+export const fullServiceScope = [
+  "We plan and run the whole show",
+  "We find the venue — or build it",
+  "Staging, sound and show-calling",
+  "Guest care and VVIP protocol",
+  "Branding, signage and wayfinding",
+  "Power, cooling and light — our own plant",
 ];
 
 export const dignitaryLine =
@@ -65,14 +83,14 @@ export const services: Service[] = [
     index: "01",
     title: "Event Management & Production",
     summary:
-      "The agency layer: concept, programme, production and showtime operations — launches, roadshows, fashion shows, weddings and celebrity appearances, planned and run by the same house that builds the venue.",
+      "The planning layer: concept, programme, production and showtime operations — launches, roadshows and ceremonies, planned and run by the same house that builds the venue.",
     scope: [
       "End-to-end event planning & production",
-      "Product launches, roadshows & fashion shows",
-      "Artist & celebrity management",
-      "Weddings & private celebrations",
+      "Product launches & roadshows",
+      "Show-calling & programme management",
+      "Government & institutional ceremonies",
     ],
-    specs: ["CONCEPT TO SHOWTIME", "ONE STOP SHOP", "ARTIST MGMT IN-HOUSE"],
+    specs: ["CONCEPT TO SHOWTIME", "ONE TEAM THROUGHOUT", "IN-HOUSE PRODUCTION"],
   },
   {
     index: "02",
@@ -594,8 +612,6 @@ export const eventTypes = [
   "Exhibition / Trade Fair",
   "Convocation / State Ceremony",
   "Product Launch / Roadshow",
-  "Fashion Show / Cultural Evening",
-  "Wedding / Private Celebration",
   "Venue & Utilities Only",
   "Other",
 ];

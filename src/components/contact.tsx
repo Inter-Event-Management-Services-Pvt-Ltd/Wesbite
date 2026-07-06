@@ -33,8 +33,8 @@ export function Contact() {
         <SectionHeading
           index="06"
           kicker="Start a project"
-          title="Brief us like a contractor"
-          lede="Send the venue, the dates and the scale. A site head — not a sales layer — reviews every enquiry, and quotes come from our own inventory, not a vendor chain."
+          title="Tell us what you're planning"
+          lede="Share the venue, the dates and the scale. A senior planner — not a sales desk — reads every enquiry, and because the inventory is ours, the quote comes straight from the people who'll build it."
         />
 
         <div className="grid gap-14 lg:grid-cols-5 lg:gap-20">

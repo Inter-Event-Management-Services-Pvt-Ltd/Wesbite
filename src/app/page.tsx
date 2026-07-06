@@ -1,3 +1,4 @@
+import { VideoIntro } from "@/components/video-intro";
 import { Hero } from "@/components/hero";
 import { CredibilityBand } from "@/components/credibility-band";
 import { Intro } from "@/components/intro";
@@ -10,6 +11,7 @@ import { Contact } from "@/components/contact";
 export default function Home() {
   return (
     <>
+      <VideoIntro />
       <Hero />
       <CredibilityBand />
       <Intro />

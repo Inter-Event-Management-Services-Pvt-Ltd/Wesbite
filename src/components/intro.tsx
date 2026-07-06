@@ -1,4 +1,5 @@
 import { Reveal } from "./reveal";
+import { fullServiceScope } from "@/lib/data";
 
 const eventKinds = [
   "Conferences & Congresses",
@@ -6,20 +7,8 @@ const eventKinds = [
   "Product Launches",
   "Roadshows",
   "Convocations",
-  "Fashion Shows",
   "Award Nights",
-  "Weddings & Private Celebrations",
   "Government Ceremonies",
-  "Artist & Celebrity Appearances",
-];
-
-const coverage = [
-  "Concept, planning & production",
-  "Venue selection & management",
-  "Show calling, AV & staging",
-  "Guest hospitality & VVIP protocol",
-  "Artist & celebrity management",
-  "Branding, signage & wayfinding",
 ];
 
 /** Who-we-are: the event-management identity, stated before the steel. */
@@ -43,12 +32,11 @@ export function Intro() {
                 {" "}India&rsquo;s institutions have used since 2002.
               </h2>
               <p className="mt-7 max-w-xl text-base leading-relaxed text-soft md:text-lg">
-                We conceptualise, plan, produce and run events — then build the
-                venue they happen in. A medical congress for ten thousand
-                delegates, a product reveal, a fashion evening, a family
-                wedding: the same office manages the programme, the artists,
-                the guests and the air-conditioning. When one company owns
-                every layer, nothing falls between vendors.
+                We plan, produce and run events — then build the venue they
+                happen in. A medical congress for ten thousand delegates, a
+                product reveal, a state ceremony: the same people look after
+                the programme, the guests and the air-conditioning. When one
+                company owns every layer, nothing falls between vendors.
               </p>
             </Reveal>
 
@@ -73,20 +61,22 @@ export function Intro() {
                 <h3 className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
                   What full-service means here
                 </h3>
-                <ol className="mt-6">
-                  {coverage.map((item, i) => (
+                <ul className="mt-6">
+                  {fullServiceScope.map((item) => (
                     <li
                       key={item}
                       className="flex items-baseline gap-4 border-b border-line py-3.5 text-sm text-soft last:border-b-0"
                     >
-                      <span className="display text-lg text-faint">0{i + 1}</span>
+                      <span className="text-accent" aria-hidden>—</span>
                       {item}
                     </li>
                   ))}
-                </ol>
+                </ul>
                 <p className="mt-6 border-l-2 border-accent pl-4 text-sm leading-relaxed text-soft">
-                  …and the part no agency can offer: the hangars, halls, power
-                  and climate plant are ours too.
+                  …and the part nobody else can offer: the hangars, halls,
+                  power and climate plant are ours too. You&rsquo;ll see the
+                  same list circling the hangar drawing above — it&rsquo;s the
+                  whole company on one page.
                 </p>
               </div>
             </Reveal>
