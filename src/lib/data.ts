@@ -335,6 +335,7 @@ export const offices = [
     address: "23A, Bhawani Kunj, Sector D-2, Vasant Kunj, New Delhi 110 070",
     phone: "+91 98100 54251",
     email: "contact@iemsnewdelhi.com",
+    map: "https://www.google.com/maps/search/?api=1&query=23A%2C%20Bhawani%20Kunj%2C%20Sector%20D-2%2C%20Vasant%20Kunj%2C%20New%20Delhi%20110070",
   },
   {
     city: "Jaipur",

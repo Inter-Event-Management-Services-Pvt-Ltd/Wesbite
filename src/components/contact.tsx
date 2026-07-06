@@ -52,6 +52,16 @@ export function Contact() {
                     <a href={`mailto:${o.email}`} className="link-draw w-fit break-all text-soft">
                       {o.email}
                     </a>
+                    {"map" in o && o.map && (
+                      <a
+                        href={o.map}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-draw mt-1 w-fit uppercase tracking-[0.16em] text-accent"
+                      >
+                        View on map <span aria-hidden>↗</span>
+                      </a>
+                    )}
                   </div>
                 </div>
               </Reveal>
