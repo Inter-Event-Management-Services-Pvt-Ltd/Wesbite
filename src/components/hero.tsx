@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from "motion/react";
+import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { Counter } from "./counter";
 import { Magnetic } from "./magnetic";
 import { heroSpecs, dignitaryLine, fullServiceScope, topEvents } from "@/lib/data";
@@ -41,12 +41,12 @@ function TrussDrawing() {
     return () => clearInterval(t);
   }, [reduce, paused]);
 
-  const cycle = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
-    exit: { opacity: 0 },
-    transition: { duration: 0.6, ease: EASE },
-  };
+  const cycle = (key: string) => ({
+    key,
+    initial: reduce ? undefined : { opacity: 0, y: 6 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.5, ease: EASE },
+  });
 
   const annotationFont = { font: "500 13px var(--font-mono)", letterSpacing: "0.18em", textTransform: "uppercase" as const };
   const leftService = fullServiceScope[step % fullServiceScope.length];
@@ -69,53 +69,35 @@ function TrussDrawing() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* invisible rail just outside the outer chord — the service text wraps along it */}
-      <defs>
-        <path id="truss-text-arc" d="M 22 468 Q 620 -6 1218 468" />
-      </defs>
+      {/* logo plate above the apex, tied to it with a stem */}
+      <motion.g
+        initial={reduce ? undefined : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 0.7 }}
+      >
+        {/* curve apex (t=0.5) sits at y≈249, not the control point */}
+        <line x1="620" y1="240" x2="620" y2="250" stroke="var(--line-strong)" strokeWidth="1" />
+        <rect x="556" y="182" width="128" height="58" fill="white" stroke="var(--line-strong)" strokeWidth="1" />
+        <image href="/brand/iems-logo.jpg" x="566" y="188" width="108" height="46" preserveAspectRatio="xMidYMid meet" />
+      </motion.g>
 
-      {/* services wrapping around the outer layering of the truss */}
-      <AnimatePresence mode="wait">
-        <motion.text {...cycle} key={`l-${leftService}`} textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
-          <textPath href="#truss-text-arc" startOffset="16%">{leftService}</textPath>
+      {/* services riding the arch shoulders, rotated to the curve tangent at t≈0.2/0.8.
+          Rotation lives on a static <g> — motion.text animates transform and would clobber it. */}
+      <g transform="rotate(-25 268 296)">
+        <motion.text {...cycle(`l-${leftService}`)} x="268" y="296" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+          {leftService}
         </motion.text>
-      </AnimatePresence>
-      <AnimatePresence mode="wait">
-        <motion.text {...cycle} key={`r-${rightService}`} textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
-          <textPath href="#truss-text-arc" startOffset="84%">{rightService}</textPath>
+      </g>
+      <g transform="rotate(25 972 296)">
+        <motion.text {...cycle(`r-${rightService}`)} x="972" y="296" textAnchor="middle" fill="var(--ink-soft)" style={annotationFont}>
+          {rightService}
         </motion.text>
-      </AnimatePresence>
+      </g>
 
       {/* flagship builds under the arch */}
-      <AnimatePresence mode="wait">
-        <motion.text {...cycle} key={`b-${build}`} x="620" y="408" textAnchor="middle" fill="var(--ink-faint)" style={annotationFont}>
-          Built by this crew · {build}
-        </motion.text>
-      </AnimatePresence>
-
-      {/* logo hanging from the apex (curve apex t=0.5 ≈ y 249) — grab it, it swings back */}
-      <line x1="620" y1="250" x2="620" y2="284" stroke="var(--line-strong)" strokeWidth="1" />
-      <foreignObject x="510" y="282" width="220" height="200" style={{ overflow: "visible" }}>
-        <motion.div
-          className="flex flex-col items-center"
-          style={{ transformOrigin: "50% 0%" }}
-          animate={reduce ? undefined : { rotate: [2.2, -2.2, 2.2] }}
-          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <motion.div
-            drag={!reduce}
-            dragSnapToOrigin
-            dragElastic={0.2}
-            dragConstraints={{ top: -50, bottom: 80, left: -90, right: 90 }}
-            dragTransition={{ bounceStiffness: 260, bounceDamping: 8 }}
-            whileDrag={{ scale: 1.05, cursor: "grabbing" }}
-            className="cursor-grab border border-line-strong bg-white px-3 py-2 shadow-md"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element -- scales with the svg via foreignObject */}
-            <img src="/brand/iems-logo.jpg" alt="IEMS" className="pointer-events-none h-10 w-auto select-none" draggable={false} />
-          </motion.div>
-        </motion.div>
-      </foreignObject>
+      <motion.text {...cycle(`b-${build}`)} x="620" y="392" textAnchor="middle" fill="var(--ink-faint)" style={annotationFont}>
+        Built by this crew · {build}
+      </motion.text>
       {/* chords */}
       <motion.path
         d={`M ${OUTER[0].x} ${OUTER[0].y} Q ${OUTER[1].x} ${OUTER[1].y} ${OUTER[2].x} ${OUTER[2].y}`}
@@ -203,9 +185,7 @@ export function Hero() {
       />
       <motion.div
         style={reduce ? undefined : { y: drawingY, opacity: drawingOpacity }}
-        // z-10 lifts the drawing over the copy container so the hanging logo stays grabbable;
-        // empty svg regions still pass clicks through to the CTA underneath
-        className="absolute -right-[8%] bottom-32 z-10 h-[38svh] w-[88%] max-w-5xl md:bottom-36"
+        className="absolute -right-[8%] bottom-32 h-[38svh] w-[88%] max-w-5xl md:bottom-36"
         aria-hidden
       >
         <TrussDrawing />
