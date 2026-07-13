@@ -342,14 +342,14 @@ export const offices = [
   {
     city: "Jaipur",
     role: "Rajasthan Operations",
-    address: "Jaipur, Rajasthan — [PLACEHOLDER: street address]",
+    address: "Jaipur, Rajasthan", // street address TBC
     phone: "+91 98290 60282",
     email: "info@indianexhibitors.com",
   },
   {
     city: "Chandigarh",
     role: "Punjab & Haryana Operations",
-    address: "Chandigarh — [PLACEHOLDER: street address]",
+    address: "Chandigarh", // street address TBC
     phone: "+91 98720 07737",
     email: "raju.nagpal2235@gmail.com",
   },
@@ -457,10 +457,10 @@ export const portfolioItems: PortfolioItem[] = [
     gallery: "winter-dos-2024",
   },
   {
-    title: "FOGSI International Conference",
+    title: "FOGSI — Scientific Sangam",
     category: "Conferences",
-    venue: "New Delhi", // [VERIFY]
-    year: "[VERIFY]",
+    venue: "AMA Convention Centre, Prayagraj",
+    year: "2023",
     scale: "Full congress build",
     note: "",
     photo: "/portfolio/fogsi/001.webp",
@@ -477,10 +477,10 @@ export const portfolioItems: PortfolioItem[] = [
     gallery: "napcon",
   },
   {
-    title: "HIAGECON",
+    title: "HIAGECON 2.0",
     category: "Conferences",
-    venue: "New Delhi", // [VERIFY]
-    year: "[VERIFY]",
+    venue: "Delhi NCR",
+    year: "",
     scale: "Congress build",
     note: "",
     photo: "/portfolio/hiagecon/001.webp",
@@ -489,8 +489,8 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: "QCI — Quality Council of India",
     category: "Conferences",
-    venue: "New Delhi", // [VERIFY]
-    year: "[VERIFY]",
+    venue: "New Delhi",
+    year: "",
     scale: "Morning & evening sessions",
     note: "",
     photo: "/portfolio/qci/001.webp",
@@ -507,31 +507,31 @@ export const portfolioItems: PortfolioItem[] = [
     gallery: "rac-2024",
   },
   {
-    title: "National Dental Commission",
-    category: "Conferences",
-    venue: "New Delhi", // [VERIFY]
-    year: "[VERIFY]",
-    scale: "Institutional conference",
+    title: "National Dental Commission — Building Inauguration",
+    category: "Ceremonies",
+    venue: "New Delhi",
+    year: "2024",
+    scale: "VVIP ceremonial build",
     note: "",
     photo: "/portfolio/national-dental-commission/001.webp",
     gallery: "national-dental-commission",
   },
   {
-    title: "NDPF 2023",
-    category: "Exhibitions",
-    venue: "New Delhi", // [VERIFY]
+    title: "NDPF — 6th Annual Hybrid Conference",
+    category: "Conferences",
+    venue: "Hotel Crowne Plaza, New Delhi",
     year: "2023",
-    scale: "Exhibition build",
+    scale: "Hybrid conference build",
     note: "",
     photo: "/portfolio/ndpf-2023/001.webp",
     gallery: "ndpf-2023",
   },
   {
-    title: "NDPF 2024",
-    category: "Exhibitions",
-    venue: "New Delhi", // [VERIFY]
+    title: "NDPF — 7th Annual Hybrid Conference",
+    category: "Conferences",
+    venue: "Hotel Crowne Plaza, New Delhi",
     year: "2024",
-    scale: "Exhibition build",
+    scale: "Hybrid conference build",
     note: "",
     photo: "/portfolio/ndpf-2024/001.webp",
     gallery: "ndpf-2024",
@@ -540,17 +540,17 @@ export const portfolioItems: PortfolioItem[] = [
     title: "MEA — Kasturba Gandhi Marg",
     category: "Ceremonies",
     venue: "Kasturba Gandhi Marg, New Delhi",
-    year: "[VERIFY]",
+    year: "",
     scale: "Government build",
     note: "",
     photo: "/portfolio/mea-kg-marg/001.webp",
     gallery: "mea-kg-marg",
   },
   {
-    title: "Inauguration Ceremony",
+    title: "CPWD Dedication — K.G. Marg & Mohammadpur",
     category: "Ceremonies",
-    venue: "New Delhi", // [VERIFY]
-    year: "[VERIFY]",
+    venue: "New Delhi",
+    year: "2023",
     scale: "VVIP inaugural",
     note: "",
     photo: "/portfolio/inauguration/001.webp",
@@ -559,8 +559,8 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: "World Congress of Mental Health",
     category: "Conferences",
-    venue: "New Delhi", // [VERIFY]
-    year: "[VERIFY]",
+    venue: "New Delhi",
+    year: "",
     scale: "Plenary + breakouts",
     note: "Swap: plenary hall photo",
   },
