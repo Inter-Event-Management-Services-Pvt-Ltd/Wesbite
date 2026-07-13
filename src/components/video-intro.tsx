@@ -21,7 +21,7 @@ export function VideoIntro() {
           loop
           playsInline
           preload="metadata"
-          poster="/media/site-loop-poster.jpg"
+          poster="/portfolio/aios-midterm/008.webp"
         >
           <source src="/media/site-loop.mp4" type="video/mp4" />
         </video>

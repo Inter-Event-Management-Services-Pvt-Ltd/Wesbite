@@ -135,6 +135,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
                   index={`0${i + 1}`}
                   caption={plate.caption}
                   note={plate.note}
+                  src={plate.src}
                   ratio={i % 3 === 0 ? "aspect-[16/10]" : "aspect-[4/3]"}
                 />
               </Reveal>

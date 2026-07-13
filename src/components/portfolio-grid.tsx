@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
@@ -63,14 +64,26 @@ export function PortfolioGrid() {
             const inner = (
               <>
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <div
-                    className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                    style={{
-                      background:
-                        "linear-gradient(152deg, var(--plate-a) 0%, var(--plate-b) 58%, var(--plate-a) 100%)",
-                    }}
-                  />
-                  <div className="hatch absolute inset-0 opacity-60" aria-hidden />
+                  {item.photo ? (
+                    <Image
+                      src={item.photo}
+                      alt={item.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    />
+                  ) : (
+                    <>
+                      <div
+                        className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                        style={{
+                          background:
+                            "linear-gradient(152deg, var(--plate-a) 0%, var(--plate-b) 58%, var(--plate-a) 100%)",
+                        }}
+                      />
+                      <div className="hatch absolute inset-0 opacity-60" aria-hidden />
+                    </>
+                  )}
                   <span className="absolute left-3 top-3 border border-line-strong bg-bg/70 px-2 py-1 font-mono text-[9px] uppercase tracking-[0.16em] text-soft backdrop-blur-sm">
                     {item.category}
                   </span>
@@ -79,9 +92,16 @@ export function PortfolioGrid() {
                       Case study
                     </span>
                   )}
-                  <p className="absolute inset-x-0 bottom-0 p-3 font-mono text-[9px] uppercase tracking-[0.12em] text-faint">
-                    ▣ {item.note}
-                  </p>
+                  {item.note && !item.photo && (
+                    <p className="absolute inset-x-0 bottom-0 p-3 font-mono text-[9px] uppercase tracking-[0.12em] text-faint">
+                      ▣ {item.note}
+                    </p>
+                  )}
+                  {item.gallery && !item.slug && (
+                    <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-3 pt-8 font-mono text-[9px] uppercase tracking-[0.12em] text-white/90">
+                      View photos ↓
+                    </p>
+                  )}
                 </div>
                 <div className="border-t border-line px-4 py-4">
                   <h3 className="display text-xl text-ink transition-colors duration-300 group-hover:text-accent md:text-2xl">
@@ -112,6 +132,13 @@ export function PortfolioGrid() {
                   >
                     {inner}
                   </Link>
+                ) : item.gallery ? (
+                  <a
+                    href={`#gallery-${item.gallery}`}
+                    className="group block border border-line bg-raised transition-colors duration-300 hover:border-line-strong"
+                  >
+                    {inner}
+                  </a>
                 ) : (
                   <div className="group border border-line bg-raised">{inner}</div>
                 )}

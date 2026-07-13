@@ -1,0 +1,1370 @@
+[
+ {
+  "slug": "aios-midterm",
+  "name": "AIOS Mid-Term Conference 2023, Patna",
+  "images": [
+   {
+    "src": "/portfolio/aios-midterm/001.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/aios-midterm/002.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/aios-midterm/003.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/aios-midterm/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/aios-midterm/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/aios-midterm/006.webp",
+    "w": 1920,
+    "h": 1282,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/aios-midterm/007.webp",
+    "w": 1920,
+    "h": 1282,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/aios-midterm/008.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/aios-midterm/009.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/aios-midterm/010.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/aios-midterm/011.webp",
+    "w": 1920,
+    "h": 1282,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/aios-midterm/012.webp",
+    "w": 1920,
+    "h": 1282,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/aios-midterm/013.webp",
+    "w": 1920,
+    "h": 1282,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/aios-midterm/014.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/aios-midterm/015.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/aios-midterm/016.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/aios-midterm/017.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/aios-midterm/018.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/aios-midterm/019.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/aios-midterm/020.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/aios-midterm/021.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/aios-midterm/022.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/aios-midterm/023.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/aios-midterm/024.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Seating Lounge"
+   },
+   {
+    "src": "/portfolio/aios-midterm/025.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Seating Lounge"
+   }
+  ]
+ },
+ {
+  "slug": "apicon",
+  "name": "API Delhi Chapter — XXXIV Annual Conference",
+  "images": [
+   {
+    "src": "/portfolio/apicon/001.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/002.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/003.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/004.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/005.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/006.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/007.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/008.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/009.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/010.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/011.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/012.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/apicon/013.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "dos-2024",
+  "name": "DOSCON 2024 — 74th Annual Conference",
+  "images": [
+   {
+    "src": "/portfolio/dos-2024/001.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/dos-2024/002.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/dos-2024/003.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/dos-2024/004.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/dos-2024/005.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/dos-2024/006.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/dos-2024/007.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/dos-2024/008.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/dos-2024/009.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/dos-2024/010.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/dos-2024/011.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/dos-2024/012.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/dos-2024/013.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/dos-2024/014.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/dos-2024/015.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/dos-2024/016.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/dos-2024/017.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/dos-2024/018.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/dos-2024/019.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/dos-2024/020.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/dos-2024/021.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Selfie Booth"
+   }
+  ]
+ },
+ {
+  "slug": "fogsi",
+  "name": "FOGSI International Conference",
+  "images": [
+   {
+    "src": "/portfolio/fogsi/001.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/fogsi/002.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/fogsi/003.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/fogsi/004.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/fogsi/005.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/fogsi/006.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/fogsi/007.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/fogsi/008.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/fogsi/009.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/fogsi/010.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/fogsi/011.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/fogsi/012.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/fogsi/013.webp",
+    "w": 1920,
+    "h": 1277,
+    "zone": "Selfie Booth"
+   }
+  ]
+ },
+ {
+  "slug": "hiagecon",
+  "name": "HIAGECON",
+  "images": [
+   {
+    "src": "/portfolio/hiagecon/001.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/hiagecon/002.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/hiagecon/003.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/hiagecon/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/hiagecon/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/hiagecon/006.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "inauguration",
+  "name": "Inauguration Ceremony",
+  "images": [
+   {
+    "src": "/portfolio/inauguration/001.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/inauguration/002.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/inauguration/003.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/inauguration/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/inauguration/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/inauguration/006.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "mea-kg-marg",
+  "name": "MEA — Kasturba Gandhi Marg",
+  "images": [
+   {
+    "src": "/portfolio/mea-kg-marg/001.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/002.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/003.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/004.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/005.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/006.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/007.webp",
+    "w": 1920,
+    "h": 2880,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/008.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/009.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/010.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/011.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/012.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/013.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/014.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/mea-kg-marg/015.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "napcon",
+  "name": "NAPCON 2023",
+  "images": [
+   {
+    "src": "/portfolio/napcon/001.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/napcon/002.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/napcon/003.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/napcon/004.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/napcon/005.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/napcon/006.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/napcon/007.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/napcon/008.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/napcon/009.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/napcon/010.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/napcon/011.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/napcon/012.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/napcon/013.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/napcon/014.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/napcon/015.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/napcon/016.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/napcon/017.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/napcon/018.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/napcon/019.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/napcon/020.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/napcon/021.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Selfie Booth"
+   }
+  ]
+ },
+ {
+  "slug": "national-dental-commission",
+  "name": "National Dental Commission",
+  "images": [
+   {
+    "src": "/portfolio/national-dental-commission/001.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/002.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/003.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/006.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/007.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/008.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/national-dental-commission/009.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "ndpf-2023",
+  "name": "NDPF 2023",
+  "images": [
+   {
+    "src": "/portfolio/ndpf-2023/001.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/002.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/003.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/006.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/007.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/008.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/009.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2023/010.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "ndpf-2024",
+  "name": "NDPF 2024",
+  "images": [
+   {
+    "src": "/portfolio/ndpf-2024/001.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/002.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/003.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/004.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/005.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/006.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/007.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/008.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/009.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/ndpf-2024/010.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "qci",
+  "name": "QCI — Quality Council of India",
+  "images": [
+   {
+    "src": "/portfolio/qci/001.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Evening Session"
+   },
+   {
+    "src": "/portfolio/qci/002.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Evening Session"
+   },
+   {
+    "src": "/portfolio/qci/003.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Evening Session"
+   },
+   {
+    "src": "/portfolio/qci/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Evening Session"
+   },
+   {
+    "src": "/portfolio/qci/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Evening Session"
+   },
+   {
+    "src": "/portfolio/qci/006.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Evening Session"
+   },
+   {
+    "src": "/portfolio/qci/007.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Evening Session"
+   },
+   {
+    "src": "/portfolio/qci/008.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/009.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/010.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/011.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/012.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/013.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/014.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/015.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/016.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/017.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/018.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/019.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/020.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/021.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   },
+   {
+    "src": "/portfolio/qci/022.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Morning Session"
+   }
+  ]
+ },
+ {
+  "slug": "rac-2024",
+  "name": "RAC 2024 — Revision Arthroplasty Conference",
+  "images": [
+   {
+    "src": "/portfolio/rac-2024/001.webp",
+    "w": 1920,
+    "h": 2880,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/002.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/003.webp",
+    "w": 1920,
+    "h": 1281,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/006.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/007.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/008.webp",
+    "w": 1920,
+    "h": 2880,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/009.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/010.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/011.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/012.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/013.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/014.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/rac-2024/015.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   }
+  ]
+ },
+ {
+  "slug": "winter-dos-2024",
+  "name": "Winter DOS 2024",
+  "images": [
+   {
+    "src": "/portfolio/winter-dos-2024/001.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/002.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/003.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/004.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/005.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/006.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/007.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Exhibition"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/008.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Gate & Façade"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/009.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/010.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/011.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/012.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/013.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 1"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/014.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/015.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/016.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/017.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 2"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/018.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/019.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/020.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/021.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Hall 3"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/022.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/023.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Venue"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/024.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/025.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/026.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Registration"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/027.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Selfie Booth"
+   },
+   {
+    "src": "/portfolio/winter-dos-2024/028.webp",
+    "w": 1920,
+    "h": 1280,
+    "zone": "Selfie Booth"
+   }
+  ]
+ }
+]

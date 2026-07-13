@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PortfolioGrid } from "@/components/portfolio-grid";
+import { SiteGallery } from "@/components/site-gallery";
 import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
@@ -38,6 +39,26 @@ export default function PortfolioPage() {
         <Reveal>
           <PortfolioGrid />
         </Reveal>
+      </section>
+
+      {/* the photographic record — every plate from the site camera crews */}
+      <section className="border-t border-line bg-sunken/40">
+        <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
+          <Reveal>
+            <p className="kicker mb-5 flex items-center gap-3">
+              <span aria-hidden className="inline-block h-px w-10 bg-accent" />
+              The site record
+            </p>
+            <h2 className="display mb-4 text-[clamp(2rem,5vw,3.8rem)] text-ink">
+              Straight from the site cameras.
+            </h2>
+            <p className="mb-12 max-w-xl text-sm leading-relaxed text-soft md:text-base">
+              Unretouched plates from recent builds — gates, halls, registration
+              concourses and exhibition floors, photographed as they were handed over.
+            </p>
+          </Reveal>
+          <SiteGallery />
+        </div>
       </section>
 
       <section className="border-t border-line bg-sunken/40">

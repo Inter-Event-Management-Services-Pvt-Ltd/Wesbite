@@ -163,7 +163,7 @@ export type Project = {
   brief: string;
   build: string[];
   delivered: string;
-  plates: { caption: string; note: string }[];
+  plates: { caption: string; note: string; src?: string }[];
 };
 
 // All three are real event names from IEMS's record; every figure and
@@ -258,11 +258,13 @@ export const projects: Project[] = [
     ],
     delivered:
       "Programme ran to schedule across all five days; exhibition floor handed to exhibitors a full day early for stall dressing.",
+    // Photos are from a later API build (Delhi Chapter XXXIV Annual
+    // Conference, 2024) — captioned as such so the 2009 case study stays honest.
     plates: [
-      { caption: "Parallel halls, session change", note: "Swap: corridor between halls" },
-      { caption: "Pharma pavilion, custom build", note: "Swap: anchor exhibitor pavilion" },
-      { caption: "Registration at opening surge", note: "Swap: counters at peak flow" },
-      { caption: "Inaugural stage, full house", note: "Swap: inaugural wide shot" },
+      { caption: "API Delhi Chapter 2024 — conference floor", note: "", src: "/portfolio/apicon/001.webp" },
+      { caption: "API Delhi Chapter 2024 — faculty lounge", note: "", src: "/portfolio/apicon/005.webp" },
+      { caption: "API Delhi Chapter 2024 — felicitations", note: "", src: "/portfolio/apicon/009.webp" },
+      { caption: "API Delhi Chapter 2024 — dais and address", note: "", src: "/portfolio/apicon/013.webp" },
     ],
   },
 ];
@@ -357,7 +359,7 @@ export const offices = [
 /*  Portfolio index                                                    */
 /* ------------------------------------------------------------------ */
 
-export type PortfolioCategory = "Exhibitions" | "Conferences" | "Ceremonies" | "Structures";
+export type PortfolioCategory = "Exhibitions" | "Conferences" | "Ceremonies";
 
 export type PortfolioItem = {
   title: string;
@@ -368,6 +370,10 @@ export type PortfolioItem = {
   note: string;
   /** present when a full case study exists at /projects/[slug] */
   slug?: string;
+  /** cover photograph from the site record */
+  photo?: string;
+  /** matching event in the photo gallery below — card deep-links to it */
+  gallery?: string;
 };
 
 export const portfolioCategories: ("All" | PortfolioCategory)[] = [
@@ -375,11 +381,11 @@ export const portfolioCategories: ("All" | PortfolioCategory)[] = [
   "Exhibitions",
   "Conferences",
   "Ceremonies",
-  "Structures",
 ];
 
-// First three map to full case studies. The rest are real event names from
-// the IEMS record or [PLACEHOLDER] stand-ins — swap with actual project data.
+// First three map to full case studies. The rest are real events from the
+// IEMS site-photo record (public/Image-Catalogue). Venues/years [VERIFY]
+// where not evident from the photo folders.
 export const portfolioItems: PortfolioItem[] = [
   {
     title: "19th World Mining Congress",
@@ -405,8 +411,150 @@ export const portfolioItems: PortfolioItem[] = [
     venue: "New Delhi",
     year: "2009",
     scale: "12 parallel halls",
-    note: "Swap: inaugural wide shot",
+    note: "",
     slug: "apicon",
+    photo: "/portfolio/apicon/001.webp", // later API edition (Delhi Chapter 2024)
+    gallery: "apicon",
+  },
+  {
+    title: "API Delhi Chapter — XXXIV Annual Conference",
+    category: "Conferences",
+    venue: "Hotel Jaypee Siddharth, New Delhi",
+    year: "2024",
+    scale: "Conference + exhibition",
+    note: "",
+    photo: "/portfolio/apicon/002.webp",
+    gallery: "apicon",
+  },
+  {
+    title: "AIOS Mid-Term Conference",
+    category: "Conferences",
+    venue: "Samrat Ashok Convention Centre, Patna",
+    year: "2023",
+    scale: "3 halls + exhibition",
+    note: "",
+    photo: "/portfolio/aios-midterm/001.webp",
+    gallery: "aios-midterm",
+  },
+  {
+    title: "DOSCON 2024 — 74th Annual Conference",
+    category: "Conferences",
+    venue: "The Ashok, New Delhi",
+    year: "2024",
+    scale: "3 halls + exhibition",
+    note: "",
+    photo: "/portfolio/dos-2024/001.webp",
+    gallery: "dos-2024",
+  },
+  {
+    title: "Winter DOS 2024",
+    category: "Conferences",
+    venue: "New Delhi", // [VERIFY]
+    year: "2024",
+    scale: "3 halls + exhibition",
+    note: "",
+    photo: "/portfolio/winter-dos-2024/001.webp",
+    gallery: "winter-dos-2024",
+  },
+  {
+    title: "FOGSI International Conference",
+    category: "Conferences",
+    venue: "New Delhi", // [VERIFY]
+    year: "[VERIFY]",
+    scale: "Full congress build",
+    note: "",
+    photo: "/portfolio/fogsi/001.webp",
+    gallery: "fogsi",
+  },
+  {
+    title: "NAPCON 2023",
+    category: "Conferences",
+    venue: "The Ashok, New Delhi",
+    year: "2023",
+    scale: "3 halls + exhibition",
+    note: "",
+    photo: "/portfolio/napcon/001.webp",
+    gallery: "napcon",
+  },
+  {
+    title: "HIAGECON",
+    category: "Conferences",
+    venue: "New Delhi", // [VERIFY]
+    year: "[VERIFY]",
+    scale: "Congress build",
+    note: "",
+    photo: "/portfolio/hiagecon/001.webp",
+    gallery: "hiagecon",
+  },
+  {
+    title: "QCI — Quality Council of India",
+    category: "Conferences",
+    venue: "New Delhi", // [VERIFY]
+    year: "[VERIFY]",
+    scale: "Morning & evening sessions",
+    note: "",
+    photo: "/portfolio/qci/001.webp",
+    gallery: "qci",
+  },
+  {
+    title: "RAC 2024 — Revision Arthroplasty Conference",
+    category: "Conferences",
+    venue: "The Grand, Vasant Kunj, New Delhi",
+    year: "2024",
+    scale: "Full venue build",
+    note: "",
+    photo: "/portfolio/rac-2024/001.webp",
+    gallery: "rac-2024",
+  },
+  {
+    title: "National Dental Commission",
+    category: "Conferences",
+    venue: "New Delhi", // [VERIFY]
+    year: "[VERIFY]",
+    scale: "Institutional conference",
+    note: "",
+    photo: "/portfolio/national-dental-commission/001.webp",
+    gallery: "national-dental-commission",
+  },
+  {
+    title: "NDPF 2023",
+    category: "Exhibitions",
+    venue: "New Delhi", // [VERIFY]
+    year: "2023",
+    scale: "Exhibition build",
+    note: "",
+    photo: "/portfolio/ndpf-2023/001.webp",
+    gallery: "ndpf-2023",
+  },
+  {
+    title: "NDPF 2024",
+    category: "Exhibitions",
+    venue: "New Delhi", // [VERIFY]
+    year: "2024",
+    scale: "Exhibition build",
+    note: "",
+    photo: "/portfolio/ndpf-2024/001.webp",
+    gallery: "ndpf-2024",
+  },
+  {
+    title: "MEA — Kasturba Gandhi Marg",
+    category: "Ceremonies",
+    venue: "Kasturba Gandhi Marg, New Delhi",
+    year: "[VERIFY]",
+    scale: "Government build",
+    note: "",
+    photo: "/portfolio/mea-kg-marg/001.webp",
+    gallery: "mea-kg-marg",
+  },
+  {
+    title: "Inauguration Ceremony",
+    category: "Ceremonies",
+    venue: "New Delhi", // [VERIFY]
+    year: "[VERIFY]",
+    scale: "VVIP inaugural",
+    note: "",
+    photo: "/portfolio/inauguration/001.webp",
+    gallery: "inauguration",
   },
   {
     title: "World Congress of Mental Health",
@@ -415,70 +563,6 @@ export const portfolioItems: PortfolioItem[] = [
     year: "[VERIFY]",
     scale: "Plenary + breakouts",
     note: "Swap: plenary hall photo",
-  },
-  {
-    title: "DOSCON",
-    category: "Conferences",
-    venue: "The Ashok, New Delhi",
-    year: "2019",
-    scale: "Outstanding services award", // [VERIFY]
-    note: "Swap: conference floor photo",
-  },
-  {
-    title: "AIOC Annual Conference",
-    category: "Conferences",
-    venue: "[VERIFY venue]",
-    year: "[VERIFY]",
-    scale: "Appreciation award",
-    note: "Swap: session hall photo",
-  },
-  {
-    title: "National Trade Fair Hangar City", // [PLACEHOLDER]
-    category: "Structures",
-    venue: "Pragati Maidan, New Delhi",
-    year: "[PLACEHOLDER]",
-    scale: "40 m clear-span bays",
-    note: "Swap: aerial of hangar rows",
-  },
-  {
-    title: "State Foundation-Stone Ceremony", // [PLACEHOLDER]
-    category: "Ceremonies",
-    venue: "NCR",
-    year: "[PLACEHOLDER]",
-    scale: "VVIP pandal & dais",
-    note: "Swap: pandal with national colours",
-  },
-  {
-    title: "Industrial Expo Stall Build-out", // [PLACEHOLDER]
-    category: "Exhibitions",
-    venue: "Jaipur",
-    year: "[PLACEHOLDER]",
-    scale: "220 Octonorm bays",
-    note: "Swap: stall aisles at open",
-  },
-  {
-    title: "University Convocation", // [PLACEHOLDER]
-    category: "Ceremonies",
-    venue: "Chandigarh",
-    year: "[PLACEHOLDER]",
-    scale: "Full ceremonial venue",
-    note: "Swap: academic procession",
-  },
-  {
-    title: "Monsoon-Rated Warehouse Hangars", // [PLACEHOLDER]
-    category: "Structures",
-    venue: "NCR",
-    year: "[PLACEHOLDER]",
-    scale: "Long-term installation",
-    note: "Swap: structure in weather",
-  },
-  {
-    title: "Auto Sector Launch Roadshow", // [PLACEHOLDER]
-    category: "Exhibitions",
-    venue: "Delhi · Jaipur · Chandigarh",
-    year: "[PLACEHOLDER]",
-    scale: "3-city tour",
-    note: "Swap: launch reveal moment",
   },
 ];
 
