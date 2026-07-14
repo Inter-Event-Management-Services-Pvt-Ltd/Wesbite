@@ -6,6 +6,7 @@
  * current iemsnewdelhi.com site and should be re-confirmed; items marked
  * [PLACEHOLDER] are invented, realistic stand-ins awaiting real content.
  */
+import { eventCaseStudies } from "./case-studies";
 
 export const site = {
   name: "IEMS",
@@ -166,8 +167,9 @@ export type Project = {
   plates: { caption: string; note: string; src?: string }[];
 };
 
-// All three are real event names from IEMS's record; every figure and
-// narrative below is [PLACEHOLDER] until confirmed against project files.
+// First three are handwritten flagship studies ([PLACEHOLDER] figures until
+// confirmed); the rest are generated from the site-photo record — see
+// case-studies.ts (appended below via spread).
 export const projects: Project[] = [
   {
     slug: "world-mining-congress",
@@ -267,6 +269,7 @@ export const projects: Project[] = [
       { caption: "API Delhi Chapter 2024 — dais and address", note: "", src: "/portfolio/apicon/013.webp" },
     ],
   },
+  ...eventCaseStudies,
 ];
 
 /* ------------------------------------------------------------------ */
@@ -423,6 +426,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2024",
     scale: "Conference + exhibition",
     note: "",
+    slug: "api-delhi-2024",
     photo: "/portfolio/apicon/002.webp",
     gallery: "apicon",
   },
@@ -433,6 +437,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2023",
     scale: "3 halls + exhibition",
     note: "",
+    slug: "aios-midterm",
     photo: "/portfolio/aios-midterm/001.webp",
     gallery: "aios-midterm",
   },
@@ -443,6 +448,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2024",
     scale: "3 halls + exhibition",
     note: "",
+    slug: "dos-2024",
     photo: "/portfolio/dos-2024/001.webp",
     gallery: "dos-2024",
   },
@@ -453,6 +459,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2024",
     scale: "3 halls + exhibition",
     note: "",
+    slug: "winter-dos-2024",
     photo: "/portfolio/winter-dos-2024/001.webp",
     gallery: "winter-dos-2024",
   },
@@ -463,6 +470,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2023",
     scale: "Full congress build",
     note: "",
+    slug: "fogsi",
     photo: "/portfolio/fogsi/001.webp",
     gallery: "fogsi",
   },
@@ -473,6 +481,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2023",
     scale: "3 halls + exhibition",
     note: "",
+    slug: "napcon",
     photo: "/portfolio/napcon/001.webp",
     gallery: "napcon",
   },
@@ -483,6 +492,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "",
     scale: "Congress build",
     note: "",
+    slug: "hiagecon",
     photo: "/portfolio/hiagecon/001.webp",
     gallery: "hiagecon",
   },
@@ -493,6 +503,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "",
     scale: "Morning & evening sessions",
     note: "",
+    slug: "qci",
     photo: "/portfolio/qci/001.webp",
     gallery: "qci",
   },
@@ -503,6 +514,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2024",
     scale: "Full venue build",
     note: "",
+    slug: "rac-2024",
     photo: "/portfolio/rac-2024/001.webp",
     gallery: "rac-2024",
   },
@@ -513,6 +525,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2024",
     scale: "VVIP ceremonial build",
     note: "",
+    slug: "national-dental-commission",
     photo: "/portfolio/national-dental-commission/001.webp",
     gallery: "national-dental-commission",
   },
@@ -523,6 +536,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2023",
     scale: "Hybrid conference build",
     note: "",
+    slug: "ndpf-2023",
     photo: "/portfolio/ndpf-2023/001.webp",
     gallery: "ndpf-2023",
   },
@@ -533,6 +547,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2024",
     scale: "Hybrid conference build",
     note: "",
+    slug: "ndpf-2024",
     photo: "/portfolio/ndpf-2024/001.webp",
     gallery: "ndpf-2024",
   },
@@ -543,6 +558,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "",
     scale: "Government build",
     note: "",
+    slug: "mea-kg-marg",
     photo: "/portfolio/mea-kg-marg/001.webp",
     gallery: "mea-kg-marg",
   },
@@ -553,6 +569,7 @@ export const portfolioItems: PortfolioItem[] = [
     year: "2023",
     scale: "VVIP inaugural",
     note: "",
+    slug: "inauguration",
     photo: "/portfolio/inauguration/001.webp",
     gallery: "inauguration",
   },

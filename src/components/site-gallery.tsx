@@ -73,7 +73,7 @@ export function SiteGallery() {
               type="button"
               aria-pressed={isActive}
               onClick={() => { setActive(t.slug); setOpen(null); }}
-              className={`relative pb-1 text-left font-mono text-[10px] uppercase tracking-[0.16em] transition-colors ${
+              className={`relative pb-1.5 text-left font-mono text-[10px] uppercase tracking-[0.16em] transition-colors ${
                 isActive ? "text-ink" : "text-faint hover:text-soft"
               }`}
             >
@@ -82,7 +82,7 @@ export function SiteGallery() {
               {isActive && (
                 <motion.span
                   layoutId="gallery-tab"
-                  className="absolute inset-x-0 -bottom-[17px] h-[2px] bg-accent"
+                  className="absolute inset-x-0 bottom-0 h-[2px] bg-accent"
                   transition={{ duration: 0.4, ease: EASE }}
                 />
               )}

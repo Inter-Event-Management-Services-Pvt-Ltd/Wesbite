@@ -17,7 +17,7 @@ export function ProjectsShowcase() {
         />
 
         <div className="space-y-20 md:space-y-28">
-          {projects.map((p, i) => (
+          {projects.slice(0, 3).map((p, i) => (
             <Reveal key={p.slug}>
               <article
                 className={`grid items-center gap-8 md:grid-cols-2 md:gap-14 ${
@@ -29,6 +29,7 @@ export function ProjectsShowcase() {
                     index={`0${i + 1}`}
                     caption={p.title}
                     note={p.plates[0].note}
+                    src={p.plates[0].src}
                     ratio="aspect-[16/11]"
                   />
                 </Link>
