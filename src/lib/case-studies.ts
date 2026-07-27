@@ -107,7 +107,7 @@ const META: EventMeta[] = [
     year: "2023",
     venue: "The Ashok, New Delhi",
     client: "Indian Chest Society · National College of Chest Physicians",
-    headline: "India's national pulmonology congress, run as one machine.",
+    headline: "Three parallel halls, four days, one continuous programme.",
     brief:
       "NAPCON 2023 — the joint national conference on pulmonary diseases — ran 5–8 October 2023 at The Ashok, New Delhi. IEMS built the welcome gates, three parallel halls, registration concourse and the pharmaceutical exhibition.",
   },
@@ -201,6 +201,17 @@ function buildFromZones(event: GalleryEvent): string[] {
   return out;
 }
 
+function statsFor(m: EventMeta, event: GalleryEvent, halls: number) {
+  const zones = new Set(event.images.map((i) => i.zone)).size;
+  const out: Project["stats"] = [];
+  if (m.year) out.push({ value: m.year, label: "Edition" });
+  if (halls > 1) out.push({ value: String(halls), label: "Parallel halls" });
+  if (zones > 1) out.push({ value: String(zones), label: "Zones built & shot" });
+  out.push({ value: String(event.images.length), label: "Plates on record" });
+  out.push({ value: m.venue.split(",").pop()!.trim(), label: "Location" });
+  return out.slice(0, 4);
+}
+
 function footprintFromZones(event: GalleryEvent): string {
   const zones = [...new Set(event.images.map((i) => i.zone))];
   return `${zones.length} zones photographed · ${event.images.length} plates`;
@@ -220,12 +231,9 @@ export const eventCaseStudies: Project[] = META.flatMap((m) => {
       client: m.client,
       footprint: footprintFromZones(event),
       headline: m.headline,
-      stats: [
-        { value: m.year || "—", label: "Edition" },
-        { value: halls > 0 ? String(halls) : "1", label: halls > 1 ? "Parallel halls" : "Main hall" },
-        { value: String(new Set(event.images.map((i) => i.zone)).size), label: "Zones built & shot" },
-        { value: String(event.images.length), label: "Plates on record" },
-      ],
+      // only figures that actually say something — most events were shot in a
+      // single zone, and "1 zone / 1 hall" is noise, not a statistic
+      stats: statsFor(m, event, halls),
       brief: m.brief,
       build: buildFromZones(event),
       delivered:

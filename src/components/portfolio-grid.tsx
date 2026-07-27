@@ -4,16 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { portfolioCategories, portfolioItems } from "@/lib/data";
+import { portfolioItems, type PortfolioCategory } from "@/lib/data";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
+
+// derived from the items themselves, so a category can never render an empty tab
+const categories: ("All" | PortfolioCategory)[] = [
+  "All",
+  ...new Set(portfolioItems.map((i) => i.category)),
+];
 
 /**
  * Category-filtered project grid. Cards re-flow with layout animation when
  * the filter changes; the active tab carries a shared sliding underline.
  */
 export function PortfolioGrid() {
-  const [active, setActive] = useState<(typeof portfolioCategories)[number]>("All");
+  const [active, setActive] = useState<(typeof categories)[number]>("All");
   const reduce = useReducedMotion();
 
   const items =
@@ -27,7 +33,7 @@ export function PortfolioGrid() {
         aria-label="Filter projects by category"
         className="mb-12 flex flex-wrap gap-x-7 gap-y-3 border-b border-line pb-4"
       >
-        {portfolioCategories.map((cat) => {
+        {categories.map((cat) => {
           const isActive = cat === active;
           return (
             <button

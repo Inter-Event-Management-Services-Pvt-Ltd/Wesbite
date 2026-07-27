@@ -29,6 +29,11 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   const project = projects[index];
   const next = projects[(index + 1) % projects.length];
 
+  // stat count varies — thin-record events carry fewer real figures
+  const statCols =
+    { 1: "md:grid-cols-1", 2: "md:grid-cols-2", 3: "md:grid-cols-3" }[project.stats.length] ??
+    "md:grid-cols-4";
+
   const meta = [
     { label: "Client", value: project.client },
     { label: "Venue", value: project.venue },
@@ -79,7 +84,7 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
 
       {/* delivery stats */}
       <section aria-label="Key figures" className="border-b border-line bg-sunken/40">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-line px-5 md:grid-cols-4 md:px-8">
+        <div className={`mx-auto grid max-w-7xl grid-cols-2 divide-x divide-line px-5 md:px-8 ${statCols}`}>
           {project.stats.map((s, i) => (
             <Reveal key={s.label} delay={i * 0.06}>
               <div className="flex flex-col px-4 py-8 first:pl-0 md:py-10">

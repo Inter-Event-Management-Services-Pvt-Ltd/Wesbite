@@ -27,9 +27,9 @@ export default function PortfolioPage() {
             </p>
             <h1 className="display text-[clamp(3rem,9vw,7.5rem)]">Portfolio</h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-soft md:text-lg">
-              Congresses, convocations, exhibitions and standing structures.
-              Three carry full case files; the rest are entries from a ledger
-              that runs two decades deep.
+              Congresses, ceremonies and exhibition floors. Every entry opens
+              its own case file, photographed on site the day it was handed
+              over — from a ledger that runs two decades deep.
             </p>
           </Reveal>
         </div>

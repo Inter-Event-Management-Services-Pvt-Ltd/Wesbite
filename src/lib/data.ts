@@ -379,35 +379,10 @@ export type PortfolioItem = {
   gallery?: string;
 };
 
-export const portfolioCategories: ("All" | PortfolioCategory)[] = [
-  "All",
-  "Exhibitions",
-  "Conferences",
-  "Ceremonies",
-];
-
-// First three map to full case studies. The rest are real events from the
-// IEMS site-photo record (public/Image-Catalogue). Venues/years [VERIFY]
-// where not evident from the photo folders.
+// Every entry is a real event from the IEMS site-photo record
+// (public/Image-Catalogue) and carries a full case study at /projects/[slug].
+// Venues/years [VERIFY] where not evident from the photo folders.
 export const portfolioItems: PortfolioItem[] = [
-  {
-    title: "19th World Mining Congress",
-    category: "Exhibitions",
-    venue: "New Delhi",
-    year: "2003", // [VERIFY]
-    scale: "18,000 m² built",
-    note: "Swap: floodlit hangar exterior",
-    slug: "world-mining-congress",
-  },
-  {
-    title: "AIIMS Convocation",
-    category: "Ceremonies",
-    venue: "AIIMS, New Delhi",
-    year: "Multiple editions",
-    scale: "5,000+ seated",
-    note: "Swap: ceremonial dais",
-    slug: "aiims-convocation",
-  },
   {
     title: "APICON",
     category: "Conferences",
@@ -573,46 +548,14 @@ export const portfolioItems: PortfolioItem[] = [
     photo: "/portfolio/inauguration/001.webp",
     gallery: "inauguration",
   },
-  {
-    title: "World Congress of Mental Health",
-    category: "Conferences",
-    venue: "New Delhi",
-    year: "",
-    scale: "Plenary + breakouts",
-    note: "Swap: plenary hall photo",
-  },
 ];
 
 /* ------------------------------------------------------------------ */
-/*  Team                                                               */
+/*  Mission & vision                                                   */
 /* ------------------------------------------------------------------ */
 
-// Team page covers the main branch only — 23A Bhawani Kunj, Vasant Kunj,
-// New Delhi. All names [PLACEHOLDER] until confirmed.
-export const leadership = [
-  {
-    name: "[PLACEHOLDER: Founder & MD name]",
-    role: "Managing Director",
-    initials: "MD",
-    bio: "Founded IEMS in 2002 and still walks every VVIP site before handover. Two decades of protocol-grade delivery under one pair of eyes.",
-    note: "Swap: MD portrait",
-  },
-  {
-    name: "[PLACEHOLDER: name]",
-    role: "Director — Projects & Operations",
-    initials: "DO",
-    bio: "Runs the project office at headquarters: estimation, programme, crew allocation and the site heads who answer for every build.",
-    note: "Swap: portrait",
-  },
-  {
-    name: "[PLACEHOLDER: name]",
-    role: "Head — Design & Fabrication",
-    initials: "DF",
-    bio: "Leads the drawing office and workshop that turn a client brief into stamped erection drawings and built stalls, in-house.",
-    note: "Swap: portrait",
-  },
-];
-
+// Parked: the /team page that carried these was removed. Ready to drop into
+// the intro or legacy section when there's a home for it.
 export const missionVision = {
   vision:
     "To be the first call India's institutions make when an event must simply work — the most trusted single-source builder of temporary venues in North India, measured by clients who never left.", // [PLACEHOLDER — refine wording with MD]
@@ -622,33 +565,6 @@ export const missionVision = {
     "Hold the protocol standard on every site, whether the chief guest is a head of state or a graduating class.",
   ],
 };
-
-export const disciplines = [
-  {
-    title: "Site & Structures",
-    detail:
-      "Riggers, erectors and site heads who raise clear-span aluminium hangars overnight and certify them for occupancy.",
-    strength: "60+ crew", // [PLACEHOLDER]
-  },
-  {
-    title: "Electrical & HVAC",
-    detail:
-      "Licensed electricians and plant operators running distribution grids and 1,400 tons of Carrier climate plant through live events.",
-    strength: "40+ crew", // [PLACEHOLDER]
-  },
-  {
-    title: "Fabrication Workshop",
-    detail:
-      "Carpenters, painters and finishers who turn a designer's stall render into built reality — in-house, never subcontracted.",
-    strength: "50+ crew", // [PLACEHOLDER]
-  },
-  {
-    title: "Logistics & Warehousing",
-    detail:
-      "Fleet drivers and warehouse supervisors across three cities who make overnight strike-downs an ordinary Tuesday.",
-    strength: "30+ crew", // [PLACEHOLDER]
-  },
-];
 
 /* ------------------------------------------------------------------ */
 /*  Careers — [PLACEHOLDER] all openings until HR confirms             */

@@ -61,7 +61,6 @@ export function SiteFooter() {
             <h3 className="mb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-accent">Company</h3>
             <ul className="space-y-2 text-sm text-soft">
               <li><Link href="/portfolio" className="link-draw hover:text-ink">Portfolio</Link></li>
-              <li><Link href="/team" className="link-draw hover:text-ink">Meet the Team</Link></li>
               <li><Link href="/careers" className="link-draw hover:text-ink">Careers</Link></li>
               <li><Link href="/#legacy" className="link-draw hover:text-ink">Since 2002</Link></li>
               <li><Link href="/#contact" className="link-draw hover:text-ink">Start an Enquiry</Link></li>

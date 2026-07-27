@@ -4,8 +4,13 @@ import { Reveal } from "./reveal";
 import { Plate } from "./plate";
 import { projects } from "@/lib/data";
 
+/** Picked by slug, not position — every one of these has photographs on file. */
+const FEATURED = ["apicon", "napcon", "national-dental-commission"];
+
 /** Alternating plates + dossier meta; each entry opens a full case study. */
 export function ProjectsShowcase() {
+  const featured = FEATURED.map((slug) => projects.find((p) => p.slug === slug)!);
+
   return (
     <section id="projects" className="scroll-mt-20 border-t border-line bg-sunken/40">
       <div className="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-32">
@@ -13,11 +18,11 @@ export function ProjectsShowcase() {
           index="03"
           kicker="Selected work"
           title="Built, not brochured"
-          lede="Three builds that show the range: an international congress from bare ground, a presidential convocation, and India's largest physicians' meeting. Each case study reads like the project file it came from."
+          lede="Three builds that show the range: India's largest physicians' congress, the national pulmonology meeting across three parallel halls, and a government building inaugurated on live national broadcast. Every plate below is a site photograph, not a render."
         />
 
         <div className="space-y-20 md:space-y-28">
-          {projects.slice(0, 3).map((p, i) => (
+          {featured.map((p, i) => (
             <Reveal key={p.slug}>
               <article
                 className={`grid items-center gap-8 md:grid-cols-2 md:gap-14 ${
