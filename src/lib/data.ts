@@ -572,10 +572,12 @@ export const missionVision = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  Careers — [PLACEHOLDER] all openings until HR confirms             */
+/*  Careers — no advertised vacancies; open applications only          */
 /* ------------------------------------------------------------------ */
 
-export const careersEmail = "careers@iemsnewdelhi.com"; // [PLACEHOLDER — confirm mailbox]
+// careers@ was never confirmed as a live mailbox, so applications go to the
+// main office address instead of bouncing.
+export const careersEmail = "contact@iemsnewdelhi.com";
 
 export const hiringPrinciples = [
   {
@@ -592,41 +594,35 @@ export const hiringPrinciples = [
   },
 ];
 
-export const openings = [
+/**
+ * No vacancies are advertised right now. These are the trades IEMS hires
+ * into when a season opens — the careers page lists them so a good
+ * applicant knows whether to write in at all.
+ */
+export const tradesWeHire = [
   {
-    role: "Site Engineer — Temporary Structures",
-    location: "New Delhi",
-    type: "Full-time",
-    brief:
-      "Own hangar and pagoda erection end-to-end: layout, crew supervision, safety certification and handover on protocol timelines.",
+    trade: "Site engineering",
+    detail: "Hangar and pagoda erection, layout, load checks, safety certification, handover on protocol timelines.",
   },
   {
-    role: "Project Manager — Conferences",
-    location: "New Delhi",
-    type: "Full-time",
-    brief:
-      "Run multi-hall scientific congresses from brief to strike-down — client-facing, budget-holding, site-living.",
+    trade: "Project management",
+    detail: "Multi-hall congresses from brief to strike-down — client-facing, budget-holding, site-living.",
   },
   {
-    role: "HVAC Plant Technician",
-    location: "Jaipur",
-    type: "Full-time",
-    brief:
-      "Operate and maintain central AC plant on live event sites; Carrier plant experience preferred, summer nerves required.",
+    trade: "Plant and power",
+    detail: "Central air-conditioning and distribution on live sites, kept running through a Delhi May afternoon.",
   },
   {
-    role: "CAD Draughtsman — Stall Design",
-    location: "New Delhi",
-    type: "Full-time",
-    brief:
-      "Detail custom exhibition stalls and pavilions for the fabrication workshop; AutoCAD essential, 3ds Max a plus.",
+    trade: "Design and draughting",
+    detail: "Custom stalls and pavilions detailed for the fabrication workshop. AutoCAD essential, 3ds Max a plus.",
   },
   {
-    role: "Warehouse Supervisor",
-    location: "Chandigarh",
-    type: "Full-time",
-    brief:
-      "Keep inventory, dispatch and returns for North India's busiest event calendar accounted for — to the last bolt.",
+    trade: "Rigging and fabrication",
+    detail: "Truss, staging and carpentry crews who can read a drawing and build to it in the dark.",
+  },
+  {
+    trade: "Stores and logistics",
+    detail: "Inventory, dispatch and returns for North India's busiest event calendar — accounted for to the last bolt.",
   },
 ];
 
