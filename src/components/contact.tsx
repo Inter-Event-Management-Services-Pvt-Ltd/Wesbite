@@ -4,7 +4,7 @@ import { useState } from "react";
 import { SectionHeading } from "./section-heading";
 import { Reveal } from "./reveal";
 import { Magnetic } from "./magnetic";
-import { eventTypes, offices } from "@/lib/data";
+import { eventTypes, offices, site } from "@/lib/data";
 
 const fieldClasses =
   "w-full border border-line bg-raised px-4 py-3.5 text-sm text-ink placeholder:text-faint transition-colors focus:border-accent focus:outline-none";
@@ -12,19 +12,34 @@ const fieldClasses =
 const labelClasses = "mb-2 block font-mono text-[10px] uppercase tracking-[0.18em] text-soft";
 
 /**
- * Enquiry form. Front-end only for now — wire `handleSubmit` to a route
- * handler / mail service (Resend, SES) before launch.
+ * Enquiry form. Posts to /api/enquiry, which mails the brief to both IEMS
+ * mailboxes through Resend.
  */
 export function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (status !== "idle") return;
+    const payload = Object.fromEntries(new FormData(e.currentTarget));
     setStatus("sending");
-    // Simulated latency so the interaction reads as real. Replace with a
-    // POST to /api/enquiry once a mail provider is chosen.
-    setTimeout(() => setStatus("sent"), 900);
+    setError(null);
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) {
+        const { error: message } = await res.json().catch(() => ({ error: null }));
+        throw new Error(message ?? "Something went wrong.");
+      }
+      setStatus("sent");
+    } catch (err) {
+      setStatus("idle");
+      setError(err instanceof Error ? err.message : "Something went wrong.");
+    }
   }
 
   return (
@@ -52,6 +67,11 @@ export function Contact() {
                     <a href={`mailto:${o.email}`} className="link-draw w-fit break-all text-soft">
                       {o.email}
                     </a>
+                    {"altEmail" in o && o.altEmail && (
+                      <a href={`mailto:${o.altEmail}`} className="link-draw w-fit break-all text-soft">
+                        {o.altEmail}
+                      </a>
+                    )}
                     {"map" in o && o.map && (
                       <a
                         href={o.map}
@@ -121,7 +141,18 @@ export function Contact() {
                     placeholder="Scale, footprint, delegate count, anything protocol-sensitive…"
                   />
                 </div>
-                <div className="sm:col-span-2">
+                {/* honeypot — hidden from people, catches bots */}
+                <div aria-hidden className="hidden">
+                  <label htmlFor="company">Company</label>
+                  <input id="company" name="company" tabIndex={-1} autoComplete="off" />
+                </div>
+                <div className="flex flex-col gap-4 sm:col-span-2">
+                  {error && (
+                    <p role="alert" className="border border-accent/50 bg-raised px-4 py-3 text-sm text-ink">
+                      {error} You can also write to{" "}
+                      <a href={`mailto:${site.email}`} className="link-draw text-accent">{site.email}</a>.
+                    </p>
+                  )}
                   <Magnetic className="w-fit">
                     <button
                       type="submit"

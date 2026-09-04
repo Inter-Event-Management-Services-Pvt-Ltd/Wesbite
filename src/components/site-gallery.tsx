@@ -8,6 +8,13 @@ import { galleryEvents } from "@/lib/gallery";
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 /**
+ * Plates shown per event before the reader asks for the rest. 214 photographs
+ * in one column run is a 15,000px scroll nobody reaches the end of; filtering
+ * to one event, or hitting "show all", opens the full set.
+ */
+const PREVIEW = 8;
+
+/**
  * The full site-photo record: every event the camera crew covered, grouped
  * by event, filterable, with a keyboard-navigable lightbox. Portfolio grid
  * cards deep-link here via #gallery-<slug>.
@@ -16,9 +23,15 @@ export function SiteGallery() {
   const reduce = useReducedMotion();
   const [active, setActive] = useState<string>("all");
   const [open, setOpen] = useState<number | null>(null); // index into flat list
+  const [expanded, setExpanded] = useState<string[]>([]);
 
-  const shown = active === "all" ? galleryEvents : galleryEvents.filter((e) => e.slug === active);
-  const flat = shown.flatMap((e) => e.images.map((img) => ({ ...img, event: e.name })));
+  const filtered = active === "all" ? galleryEvents : galleryEvents.filter((e) => e.slug === active);
+  // one event in focus, or explicitly expanded, shows every plate; otherwise a preview
+  const shown = filtered.map((e) => ({
+    ...e,
+    plates: active === e.slug || expanded.includes(e.slug) ? e.images : e.images.slice(0, PREVIEW),
+  }));
+  const flat = shown.flatMap((e) => e.plates.map((img) => ({ ...img, event: e.name })));
 
   // deep links from the portfolio grid: #gallery-<slug>
   useEffect(() => {
@@ -95,7 +108,8 @@ export function SiteGallery() {
       <div className="space-y-16">
         {shown.map((event) => {
           const base = offset;
-          offset += event.images.length;
+          offset += event.plates.length;
+          const hidden = event.images.length - event.plates.length;
           return (
             <section key={event.slug} id={`gallery-${event.slug}`} className="scroll-mt-24">
               <h3 className="mb-6 flex items-baseline gap-3">
@@ -105,7 +119,7 @@ export function SiteGallery() {
                 </span>
               </h3>
               <div className="columns-2 gap-4 md:columns-3 xl:columns-4">
-                {event.images.map((img, i) => (
+                {event.plates.map((img, i) => (
                   <button
                     key={img.src}
                     type="button"
@@ -129,6 +143,16 @@ export function SiteGallery() {
                   </button>
                 ))}
               </div>
+              {hidden > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setExpanded((x) => [...x, event.slug])}
+                  className="mt-2 border border-line px-5 py-3 font-mono text-[10px] uppercase tracking-[0.16em] text-soft transition-colors hover:border-accent hover:text-ink"
+                >
+                  Show all {event.images.length} plates
+                  <span aria-hidden className="ml-2 text-faint">+{hidden}</span>
+                </button>
+              )}
             </section>
           );
         })}
@@ -152,13 +176,23 @@ export function SiteGallery() {
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/70">
                 {flat[open].event} · {flat[open].zone} · {open + 1} / {flat.length}
               </p>
-              <button
-                type="button"
-                onClick={() => setOpen(null)}
-                className="border border-white/25 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-white/80 transition-colors hover:border-white hover:text-white"
-              >
-                Close ✕
-              </button>
+              <div className="flex items-center gap-2">
+                <a
+                  href={flat[open].src}
+                  download={`${flat[open].event.replace(/[^\w]+/g, "-").toLowerCase()}-${flat[open].src.split("/").pop()}`}
+                  onClick={(e) => e.stopPropagation()}
+                  className="border border-white/25 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-white/80 transition-colors hover:border-white hover:text-white"
+                >
+                  Download ↓
+                </a>
+                <button
+                  type="button"
+                  onClick={() => setOpen(null)}
+                  className="border border-white/25 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-white/80 transition-colors hover:border-white hover:text-white"
+                >
+                  Close ✕
+                </button>
+              </div>
             </div>
             <div className="relative flex min-h-0 flex-1 items-center justify-center px-14 pb-8">
               {/* eslint-disable-next-line @next/next/no-img-element -- full-frame view of the already-optimized webp */}

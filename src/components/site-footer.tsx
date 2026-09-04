@@ -40,6 +40,14 @@ export function SiteFooter() {
                 <a href={`mailto:${o.email}`} className="link-draw inline-block break-all hover:text-ink">
                   {o.email}
                 </a>
+                {"altEmail" in o && o.altEmail && (
+                  <>
+                    <br />
+                    <a href={`mailto:${o.altEmail}`} className="link-draw inline-block break-all hover:text-ink">
+                      {o.altEmail}
+                    </a>
+                  </>
+                )}
               </address>
             </div>
           ))}
@@ -67,6 +75,11 @@ export function SiteFooter() {
               <li>
                 <a href={`mailto:${site.email}`} className="link-draw break-all hover:text-ink">
                   {site.email}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${site.altEmail}`} className="link-draw break-all hover:text-ink">
+                  {site.altEmail}
                 </a>
               </li>
             </ul>

@@ -26,15 +26,17 @@ export function Legacy() {
                 >
                   2002
                 </p>
-                <blockquote className="mt-8 max-w-sm border-l-2 border-accent pl-5">
+                {/* House principle, signed — not a quotation. Swap in a real
+                    attributed quote from the MD when one is on record. */}
+                <div className="mt-8 max-w-sm border-l-2 border-accent pl-5">
                   <p className="text-lg leading-relaxed text-ink">
-                    &ldquo;Well done is better than well said. Our client retention
-                    ratio is the only advertisement we have ever needed.&rdquo;
+                    Well done is better than well said. The work stands where it
+                    was built, and the institutions that saw it call back.
                   </p>
-                  <footer className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-faint">
-                    Managing Director, IEMS — [PLACEHOLDER: name & portrait]
-                  </footer>
-                </blockquote>
+                  <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-faint">
+                    Harbans Nagpal — Managing Director, IEMS
+                  </p>
+                </div>
               </Reveal>
             </div>
           </div>

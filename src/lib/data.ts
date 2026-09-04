@@ -10,11 +10,13 @@ import { eventCaseStudies } from "./case-studies";
 
 export const site = {
   name: "IEMS",
+  managingDirector: "Harbans Nagpal",
   fullName: "Inter Event Management Services Pvt. Ltd.",
   founded: 2002,
   tagline: "Temporary cities. Permanent standards.",
   cities: ["New Delhi", "Jaipur", "Chandigarh"],
   email: "contact@iemsnewdelhi.com",
+  altEmail: "iemsnewdelhi@gmail.com",
   phone: "+91 98100 54251",
 };
 
@@ -300,32 +302,34 @@ export const timeline = [
   {
     year: "Today",
     title: "Second generation, same standard",
-    text: "Two decades on, the client retention ratio — not the brochure — is the company's proudest number.", // [PLACEHOLDER]
+    text: "Under Managing Director Harbans Nagpal the company runs its own hangars, cooling plant and stall systems — the reason a quote and the finished hall match.",
   },
 ];
 
 /* ------------------------------------------------------------------ */
-/*  Testimonials — [PLACEHOLDER] swap with real, attributed quotes     */
+/*  Credentials — verifiable standing, not invented quotes             */
 /* ------------------------------------------------------------------ */
 
-export const testimonials = [
+export const credentials = [
   {
-    quote:
-      "The venue was handed to our security detail two days early, inspected, and nothing needed to change. That has happened exactly once in my career.",
-    name: "Organising Secretary",
-    org: "National Medical Congress — [PLACEHOLDER]",
+    label: "Protocol",
+    value:
+      "Presidential, Prime Ministerial and Vice-Presidential inaugurations handed over to the security agencies ahead of schedule, every edition.", // [VERIFY]
   },
   {
-    quote:
-      "IEMS quoted a number, built to it, and the air-conditioning held through a Delhi May afternoon with a full hall. Everything else is detail.",
-    name: "Director, Conferences",
-    org: "Apex Industry Association — [PLACEHOLDER]",
+    label: "Recognition",
+    value:
+      "Best Event Management Company — Delhi, Jaipur and Chandigarh (2013, 2017).", // [VERIFY award names/years]
   },
   {
-    quote:
-      "We have used the same crew leads for eleven years. Continuity like that is the real service.",
-    name: "Administrative Officer",
-    org: "Central Institution, New Delhi — [PLACEHOLDER]",
+    label: "Continuity",
+    value:
+      "Operating without a break since 2002, with the same crew leads returning to the same institutions year after year.",
+  },
+  {
+    label: "Inventory",
+    value:
+      "46,430 m² of aluminium hangar, 1,400 tonnes of air-conditioning plant and 1,875+ stall systems — owned, not hired in.", // [VERIFY]
   },
 ];
 
@@ -340,6 +344,7 @@ export const offices = [
     address: "23A, Bhawani Kunj, Sector D-2, Vasant Kunj, New Delhi 110 070",
     phone: "+91 98100 54251",
     email: "contact@iemsnewdelhi.com",
+    altEmail: "iemsnewdelhi@gmail.com",
     map: "https://www.google.com/maps/search/?api=1&query=23A%2C%20Bhawani%20Kunj%2C%20Sector%20D-2%2C%20Vasant%20Kunj%2C%20New%20Delhi%20110070",
   },
   {

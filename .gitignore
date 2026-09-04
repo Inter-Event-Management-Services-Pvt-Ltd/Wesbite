@@ -42,3 +42,4 @@ next-env.d.ts
 
 # raw photo catalogue (1.8GB originals - optimized copies live in public/portfolio)
 /public/Image-Catalogue/
+!.env.example

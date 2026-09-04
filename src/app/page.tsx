@@ -6,7 +6,7 @@ import { Services } from "@/components/services";
 import { ProjectsShowcase } from "@/components/projects-showcase";
 import { SiteRecordBand } from "@/components/site-record-band";
 import { Legacy } from "@/components/legacy";
-import { Testimonials } from "@/components/testimonials";
+import { Credentials } from "@/components/credentials";
 import { Contact } from "@/components/contact";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <ProjectsShowcase />
       <SiteRecordBand />
       <Legacy />
-      <Testimonials />
+      <Credentials />
       <Contact />
     </>
   );
